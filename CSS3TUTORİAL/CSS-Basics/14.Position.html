@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Position</title>
+    <style>
+        .fixed-topbar{
+            width: 50%;
+            padding: 20px;
+            background-color: black;
+            color:white;
+            text-align: center;/* contenti ortalıyor paddingin içinde  */
+            position: fixed; /*Position etiketi ile de top-bar nav-bar gibi özellikleri ekleyebilirz
+            bu özellik fixed yani sabitlenip sürekli orada durur scroll aşağı insede*/
+            right: 20px;/*right özelliği ile de sağ kenara ne kadar uzaklıkla yaslansın mantığında bir özellik. 
+            aynısı top left bottom olarak da kullanılabilir */
+            bottom: 0px;
+            /*
+            Biz bu positon:fixed özelliğini header veya nav-barlarda falan sıklıkla kullanırız.
+            */
+        }
+        .blue{
+            width: 100px;
+            height: 100px;
+            border: 0cap;
+            background-color: blue;
+            position: relative;/*Bu position:relative özelliği bu contentin sayfada bulunduğu yerden position vermeye yarar. */
+            top: 20px;/*relative özelliği sayesinde bulunduğu yerden sayfanın top kısmına 10px mesafe ayarladık*/
+            left: 20px;/*Burada da bulunduğumuz yerden sayfanın left kısmına 10px uzaklığının olmasını sağlar*/
+                /*Şimdi bu görüntüde red contentimiz blue contentin üstünde bunun böyle olmamasını blue üstte olsun 
+                istersek z index'i kullanmamız gerek */
+            z-index: 1;
+            }   
+        .red{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            top: 5px;/* Burada dikkat etmemiz gereken konu önemli redin bulunduğu konumdan topuna 20px uzaklaştık relative yaptığımızda sayfanın top kısmı veya left kısmı önemli değil contentin nerede bulunduğu önemli */
+            left: 5px;
+        } 
+
+        .outer-box{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            position:relative; /*Bu da static harici bir şey olabilir yani relative veya fixed olabilir aşağıdaki özelliği kullanabilmek için
+            bu arada position özelliği default olarak statictir o yüzden relative veya fixed diye belirtmemiz gerek kesinlikle */
+            left: 100px;
+            top: 100px;
+        }
+
+        .inner-box{
+            width:50px;
+            height:50px;
+            background-color: blue;
+            position:absolute;/*position absolute özelliği bu contentin outeru ile sınırlı anlamına geliyor
+            yani normalde mesela left özelliğini falan kullandığımızda sayfadan alıyordu konumu şu anda outer-boxtan alıyor.*/
+            bottom: 10px;
+            right:10px;/*mesela burada right kısım ile arasında 10px mesafe koy anlamına geliyor position absolute yapmasak burada 
+            sayfanın rightı olarak yapardı fakat burada outer-box'a göre konumlanıp outer-box ile arasında 10px lik mesafe bırakıyor*/
+
+        }
+
+
+    </style>
+</head>
+<body style="height: 10000px;"><!--Burada body'e height verdik çünkü bizim body miz contentin yüksekliği kadar aslında ama böyle
+    yaparak önceden biz height verebiliriz.-->
+    
+    <div class="fixed-topbar">Udemy</div>
+
+    <div class="blue"></div>
+    <div class="red"></div>
+
+    <div class="outer-box">
+        <div class="inner-box"></div>
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Tasarım</title>
+    <style>
+        /*body{
+            background: red;
+        }
+        @media(max-width:768px) {
+            body{
+                background: blueviolet;
+            }    
+
+
+        } */
+
+      /*  p{
+            display: none;
+        }
+        @media(min-width:768px){
+            p{
+                display: block;
+            }
+        }*/
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 1100px;
+            margin:0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            border: 1px solid black;
+            background: gray;
+            padding: 10px;
+            width: 25%;
+        }
+      
+        /*Tablet*/
+        @media(max-width:768px){
+            .box{
+                width: 50%;
+            }
+        }
+          /*Mobile*/
+          @media(max-width:500px){
+            .box{
+                width: 100%;
+             }
+    }
+    </style>
+<!--Bu @media() media querires olarak adlandırılır sayfa normal çalışsın ama max-width 768px'in altındaysa bunlar olsun anlamına gelmesi için yaparız-->
+
+</head>
+<body>
+    <!--Responsive Tasarım: Farklı aygıtlarda telefonlarda tabletlerde kullanıcı arayüzünün optimize olması demek aslında bir masaüstü bilgisayar ile telefon ekraranında bizim arayüzümüz
+    aynı gözükemez bunu da Media Queries ile yapıyoruz.-->
+
+    <!--<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, ducimus.</p>-->
+
+    <div class="container">
+        <div class="box">
+            <h1>Article1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, deleniti?</p>
+        </div>
+        <div class="box">
+            <h1>Article2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, deleniti?</p>
+        </div>
+        <div class="box">
+            <h1>Article3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, deleniti?</p>
+        </div>
+        <div class="box">
+            <h1>Article4</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, deleniti?</p>
+        </div>
+
+    </div>
+</body>
+</html>

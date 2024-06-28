@@ -1,0 +1,16 @@
+#navbar{
+    flex-direction: column; /*navbarda bir tane h1 etiketimiz ve ul etiketimiz var bunları alt alta koy demek önceden display flex bunları satır yapıyordu şmdi alt alta koy olarak değiştirdik.*/
+    padding-top: 1em; /*padding bıraktık ki sıkışık durmasın*/
+    padding-bottom: 1em;
+    overflow: hidden;/*taşmaları görünmez yap*/
+}
+#training .items{
+    flex-direction: column;
+
+}
+#training .items .item{
+    width: 100%;
+}
+#courses .courses .course{
+    flex-direction: column;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+
+        }
+        div.box-1{
+            width: 500px;
+            height: 200px;
+            border-style:solid;
+            border-color: black;
+            border-width: 5px;
+            padding: 40px;
+            box-sizing: border-box; /*
+            
+            toplam width'i 500 yaptık yani*/
+
+        }
+        div.box-2{
+            width: 500px;
+            height: 200px;
+            border: 5px solid black;
+            padding: 40px; /*burada da sadece content'in width'i 500px yaptık.*/
+        }
+        div.box-3{
+            width: 500px;
+            height: 200px;
+            border-style:solid;
+            border-color: black;
+            border-width: 5px;
+            padding: 100px;
+            box-sizing: border-box; /*
+            
+            toplam width'i 500 yaptık yani ve böyle yapınca padding farklı olsa da toplam width 500 olduğu için 
+            box aynı olur*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, perspiciatis?
+    </div>
+    <div class="box-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta!
+    </div>
+    <div class="box-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, soluta!
+    </div>
+</body>
+</html>

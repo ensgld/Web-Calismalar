@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Enes Geldi | Programlama Eğitimim"> 
+    <meta name="description" content="Bu sayfa benim şu anda kadar yetkin olduğum programlama dillerini ve yetkin olmak istediğim dilleri göstermektedir.">
+    <!--Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+    <!--Font Awesome iconlar için dahil edildi.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./main.css">
+    <!--Tablet için-->
+    <link rel="stylesheet" media="(max-width:768px)" href="./tablet.css">
+    <!--Telefon için-->
+    <link rel="stylesheet" media="(max-width:500px)" href="./mobile.css">
+    <title>Enes Geldi</title>
+</head>
+<body>
+
+   <header class="bg-blue">
+    <div class="container">
+        <nav id="navbar">
+            <h1 class="heading-large text-center" >Enes Geldi</h1>
+            <ul>
+                <li><a href="#home">Anasayfa</a></li>
+                <li><a href="#courses">Kurslarım</a></li>
+                <li><a href="#training">Eğitimler</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section id="home"><!--Home kısmını yapmak için section açıyoruz-->
+        <img src="./img/ben.jpg" alt="EnesGeldi">
+        <div class="name text-center">
+            <h2 class="heading-large">Enes Geldi</h2>
+            <p>Student of Computer Engineering | AYBÜ</p>
+        </div>
+        <a class="btn-style btn-primary " href="#courses">Kurslara Git</a>
+        
+    </section>
+    
+    <section id="training" class="bg-darkblue">
+        <h3 class="text-center heading-medium">Eğitimler</h3>
+        <div class="items">
+            <article class="item">
+                <i class="fa-solid fa-book"></i>
+                <h3>Okul İçi Yazılım Eğitimleri</h3>
+                <p>Java Programlama, Pyhton Programlama, Object Oriented Programming, Data Structure</p>
+            </article>
+            <article class="item">
+                <i class="fa-solid fa-book"></i>
+                <h3>Kendi Yazılım Çalışmalarım</h3>
+                <p>Şu ana kadar Java Script, İleri Seviye HTML,CSS </p>
+            </article>
+            <article class="item">
+                <i class="fa-solid fa-book"></i>
+                <h3>Okul İçi Diğer Çalışmalar</h3>
+                <p>Donanım Dersleri ve Matematik Derslerini Tamamladık.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h3 class="text-center heading-medium">Kurslarım</h3>
+        <div class="container">
+            <div class="courses">
+                <div class="course">
+                    <div class="course-img">
+                        <img src="./img/indir.png" alt="Java Script">
+                        <span>Web</span>
+                    </div>
+                  
+                    <div class="course-info">
+                        <div class="course-text course-text-title">Java Script Programlama</div>
+                        <div class="course-text course-text-desc">Web Geliştirme için bir programlama dili olan JS öğrenmem gerek.</div>
+                        <div class="course-text course-text-inst">Mustafa Murat Coşkun</div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-img">
+                        <img src="./img/1_TY9uBBO9leUbRtlXmQBiug.png" alt="Node.js">
+                        <span>Web</span>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-text course-text-title">Node.js</div>
+                        <div class="course-text course-text-desc">Web Geliştirme için interface olan Node.js öğrenmem gerek.</div>
+                        <div class="course-text course-text-inst">Mustafa Murat Coşkun</div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-img">
+                        <img src="./img/Angular_gradient.png" alt="AngularFramework">
+                        <span class="text-center">Web</span>
+                    </div>
+                   
+                    <div class="course-info">
+                        <div class="course-text course-text-title ">Angular Framework</div>
+                        <div class="course-text course-text-desc">Web Geliştirme için framework olan Angular öğrenmem gerek.</div>
+                        <div class="course-text course-text-inst">Mustafa Murat Coşkun</div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="bg-darkblue">
+        <div class="contact-form">
+            <form>
+                <h4 class="text-center heading-medium">Bana Ulaşın!</h4>
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <input 
+                     type="text"
+                     class="form-control" 
+                     name="name" 
+                     id="name" 
+                     placeholder="İsim">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input 
+                     type="email"
+                     class="form-control" 
+                     name="email" 
+                     id="email" 
+                     placeholder="E-Mail">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <textarea 
+                    name="message" 
+                    id="message" 
+                    class="form-control" 
+                    rows="5" 
+                    placeholder="Mesajınız..."
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn-style">Gönder</button>
+            </form>
+            <ul>
+                <li> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li> <a href=""><i class="fa-solid fa-phone"></i></a></li>
+            </ul>
+
+
+        </div>
+
+
+    </footer>
+</body>
+</html>

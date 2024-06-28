@@ -1,0 +1,79 @@
+/*Global css kullanımı bütün bileşenlerde ortak olan stillendirmeleri tekrar
+tekrar yazmak yerine ortak olanları global css de yazıp daha sonra buradan onları kullanmak bu 
+sayede daha tutarlı kod yazmak mümkündür.*/
+/*For the text:*/
+.text-center{
+    /*mesela burada bizim text görünümümüzü ortalamak istiyorsak hepsine tek tek bu özelliği vermek yerine
+    classını vermek daha kolaydır.*/
+    text-align: center;
+}
+.heading-small{
+    /*burada da text align ile aynı mantık bizim font size'ımız bazı textlerde değişebilir herbirinde tek tek değişmek yerine direkt bu classı verdiğimizde buradan o özelliğe sahip olabilir.*/
+    font-size: small;
+}
+.heading-medium{
+    font-size: medium;
+}
+.heading-large{
+    font-size: large;
+}
+/*For the Button */
+.btn-style{
+    margin-top: 1.25rem;
+    padding: 0.5rem 3rem;
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+}
+.btn-primary{
+    background-color: #120277;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: #120277;
+    border: 1px solid #120277;
+}
+
+
+
+/*For the Colors:*/
+.bg-blue{
+    background-color: #1568b5;
+}
+.bg-darkblue{
+    background-color: #120277;
+}
+.container{ /*container sayesinde navbarımızı falan ortaladık sayfaya margin:0 auto o işe yarıyor zaten 
+    ortalıyor içindekileri sağdan soldan*/
+    max-width: 1100px;
+    margin:0 auto;
+}
+/*For the Course Text*/
+.course-text{
+    margin-bottom: 0.25rem;
+    letter-spacing:1px ;
+}
+.course-text-title{
+    font-weight: bold;
+
+}
+.course-text-desc{
+    opacity: 0.8;
+}
+.course-text-inst{
+    font-size: 10px;
+}
+/*For the Form*/
+.form-group{
+    padding: 0.5rem 0;
+}
+.form-group label{
+    display: block;
+}
+.form-control{
+    width:100%;
+    padding:0.4rem;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 10px;
+}
+

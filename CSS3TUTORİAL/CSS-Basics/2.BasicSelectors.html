@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasicSelector</title>
+    <style> 
+    *{
+        /*
+        *'ın anlamı bütün evrensel hepsini kapsıyor demektir.
+        bunun içinde yaptığımız stil değişiklikleri bütün her şeyi değiştirir.    */
+    }
+       /* h1{
+            color: azure;
+        }*/
+        #logo{
+            color: blueviolet ;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+      /* #para1,.info{
+        background-color: black;
+       }*/
+      /* .info{
+        color: aliceblue;
+       }*/
+       #para1.info{
+        color: blue;
+       }
+
+     
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header1</h1>
+        <h1 id="logo">Logo</h1>
+        <ul> 
+            <li>  <a href="#">Contact</a> </li>
+            <li> <a href="#">Services</a> </li>
+        </ul>
+    </header>
+    <h1>Header2</h1>
+    <p id="para1" class="lead info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, laudantium?</p>
+    
+    <p class="info">Lorem, ipsum <span class="primary">dolor sit</span> amet consectetur adipisicing elit. A, similique.</p>
+
+    <p class="info">Lorem, ipsum <span>dolor sit</span> amet consectetur adipisicing elit. A, similique.</p>
+
+    <p>Test Paragraph</p>
+
+    <a href="#">Home</a>
+
+</body>
+</html>

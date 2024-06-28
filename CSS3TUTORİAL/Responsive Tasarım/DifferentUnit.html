@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-CSS Units</title> 
+    <style>
+        html{
+            font-size: 10px;
+        }
+        div{
+            width: 40vw;
+            font-size: 1.5em; /*burada 1.5em deyince aslında 16px olan defaultu arttırmış olduk 24px yaptık ama bunu daha dinamik daha güvenilir şekilde yapmış olduk*/
+        }
+        p{
+            font-size: 1.5em;/*bunun da parent'ı div olduğu için divi 1.5em arttırdık sonra bunu da arttırdık yani 36px oldu.*/
+            padding: 1.5em;
+        }
+    </style>
+    <!--
+        Responsive Units
+        em,rem,%,vw,vh
+        bu unitler boyutları px vermek yerine bunlarla işlemi daha dinamik hale getirebiliriz
+        em:parent'ının 1.5 katı büyüklüğünde demek
+        rem: html elementine göre büyütür yani mesela 1.5em yaparsak mesela html de fontsize 16px bunu 24px yapar.
+        parentına göre değil ama 
+        %: bu ise html'deki özelliğin mesela %50 dersek yüzde 50 sini alır
+        vw:view port width olarak geçer ve sayfanın yatay olan kısmının width yani genişliğini temsil eder.
+        tüm genişliğiiz 100vw dir biz bir dive falan 40vw deyince bunun %40ı kadar büyüklükte olmuş oluyor.
+        vh: view port height olarak geçer ve sayfanın dikey olan kısmının height ı yüksekliği olarak temsil edilir.
+
+    -->
+
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, provident.</p>
+    </div>
+</body>
+</html>

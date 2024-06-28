@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        *{ /* bunu yapmamızın sebebi default olarak gelen margin ve 
+            padding'i resetledik
+            */
+        margin:0;
+        padding: 0;    
+        }
+        div.box-1 {
+            /*margin-left: 50px; sadece sol tarafa boşluk bıraktık 
+            margin-right: 50px;sadece sağ tarafa boşluk bıraktı 
+            margin-top: 50px;
+            margin-bottom: 50px;*/
+            background: grey;
+            width: 50%;
+            margin-left: auto;/*soldan ortaya auto ayarlar*/
+            margin-right: auto;/*sağdan ortaya auto ayarlar*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, aliquid.</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, eveniet?</div>
+
+
+</body>
+</html>

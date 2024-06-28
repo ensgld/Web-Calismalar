@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Fonts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style> 
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        /* Eğer biz bir linke falan bir imleç özelliği katmak istiyorsak 
+        a:pseudoclass şeklinde yapmalıyız aşağıda örneklerini yapıyoruz*/
+        a{
+            font-size: 30px;
+        }
+        a:link{/*bu şekilde*/
+            color:green;
+        }
+        a:hover{ /*hover özelliği imleci üstüne getirdiğimizde olan değişikliği tanımlar*/ 
+            color:brown
+        }
+        a:visited{/*visited özelliği ise eğer bu link daha önceden ziyaret edilmişse siyah gözükür default olarak*/
+            color: black;
+        }
+        a:active{
+            color:blue
+        }
+    </style>
+</head>
+
+<body>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <a href="#"> Link'e tıklayınız</a>
+    <h1>Başlık 1</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, aperiam.</p>
+
+</body>
+</html>
